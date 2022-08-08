@@ -6,4 +6,5 @@ setup(
     author="Antoine Baudoux",
     author_email="abaudoux@gmail.com",
     packages=find_packages(include=['gc2_lib', 'gc2_lib.*']),
+    requires=['requests']
 )

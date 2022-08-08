@@ -1,8 +1,8 @@
 # Python Module example
+import requests
 
-def add(a, b):
+
+def update_lesson_status():
     """This program adds two
     numbers and return the result"""
-
-    result = a + b
-    return result
+    response = requests.post('https://hook.eu1.make.com/lw29fl3xmh32z7975lmhrroceywmvrw2', data={'key': 'value'})
