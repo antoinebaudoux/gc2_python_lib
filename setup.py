@@ -1,14 +1,9 @@
-import os
-from setuptools import setup
-
-BUILD_ID = os.environ.get("BUILD_BUILDID", "0")
+from setuptools import setup, find_packages
 
 setup(
-    name="GC2 python libraries",
-    version="0.1" + "." + BUILD_ID,
-    # Author details
+    name="gc2_lib",
+    version="0.1.0",
     author="Antoine Baudoux",
     author_email="abaudoux@gmail.com",
-    packages=['g2c_lib'],
-    setup_requires=[],
+    packages=find_packages(include=['gc2_lib', 'gc2_lib.*']),
 )
